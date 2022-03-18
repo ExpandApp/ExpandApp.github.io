@@ -23,11 +23,47 @@ class HomeLinkExp2Sreen extends StatelessWidget {
                 ),
               ),
               Text(
-                "Bem vindo ",
+                "Bem vindo.",
                 style: TextStyle(
                   color: Colors.black54,
                   fontSize: 16,
                   fontWeight: FontWeight.w500,
+                ),
+              ),
+              SizedBox(
+                height: 25,
+              ),
+              InkWell(
+                borderRadius: BorderRadius.circular(10),
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => SignupScreen()));
+                },
+                //splashColor: Colors.black,
+                hoverColor: Constants.redAirbnb,
+                child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    border: Border.all(color: Colors.black87),
+                    color: Colors.lightBlueAccent.shade100,
+                  ),
+                  child: Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 22, vertical: 30),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: <Widget>[
+                        //Icon(Icons.search),
+                        Center(
+                          child: Text(
+                            "Venham fazer parte dessa inovação",
+                            style: TextStyle(
+                                fontSize: 15, color: Colors.grey.shade700),
+                            overflow: TextOverflow.ellipsis,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
                 ),
               ),
               SizedBox(
@@ -122,7 +158,7 @@ class HomeLinkExp2Sreen extends StatelessWidget {
                         //Icon(Icons.search),
                         Center(
                           child: Text(
-                            "Link Região -> Solicite o seu!",
+                            "Link Região -> Solicite o seu",
                             style: TextStyle(
                                 fontSize: 13, color: Colors.grey.shade700),
                             overflow: TextOverflow.ellipsis,

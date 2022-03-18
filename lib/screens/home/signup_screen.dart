@@ -35,7 +35,7 @@ class SignupScreen extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    "Link Região - Solicite o seu!",
+                    "Inovar e Democratizar na forma de buscar local físico comercial.",
                     style: TextStyle(
                       color: Colors.black54,
                       fontSize: 16,
@@ -58,7 +58,7 @@ class SignupScreen extends StatelessWidget {
                       return Padding(
                         padding: const EdgeInsets.only(top: 8),
                         child: SucessBox(
-                          message: 'Sucesso! Obrigado entraremos em contato.',
+                          message: 'Obrigado, entraremos em contato em breve.',
                         ),
                       );
                     else
