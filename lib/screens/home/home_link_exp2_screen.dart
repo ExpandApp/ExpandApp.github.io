@@ -151,14 +151,12 @@ class HomeLinkExp2Sreen extends StatelessWidget {
                   child: Padding(
                     padding:
                         EdgeInsets.symmetric(horizontal: 190, vertical: 12),
-                    child: Expanded(
-                      child: Container(
-                        height: 90,
-                        width: 180,
-                        child: Image(
-                          image: AssetImage("assets/images/app_store2.png"),
-                          fit: BoxFit.scaleDown,
-                        ),
+                    child: Container(
+                      height: 90,
+                      width: 180,
+                      child: Image(
+                        image: AssetImage("assets/images/app_store2.png"),
+                        fit: BoxFit.scaleDown,
                       ),
                     ),
                   ),
@@ -182,14 +180,12 @@ class HomeLinkExp2Sreen extends StatelessWidget {
                   child: Padding(
                     padding:
                         EdgeInsets.symmetric(horizontal: 190, vertical: 12),
-                    child: Expanded(
-                      child: Container(
-                        height: 90,
-                        width: 180,
-                        child: Image(
-                          image: AssetImage("assets/images/google_play.png"),
-                          fit: BoxFit.scaleDown,
-                        ),
+                    child: Container(
+                      height: 90,
+                      width: 180,
+                      child: Image(
+                        image: AssetImage("assets/images/google_play.png"),
+                        fit: BoxFit.scaleDown,
                       ),
                     ),
                   ),
