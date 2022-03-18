@@ -136,7 +136,66 @@ class HomeLinkExp2Sreen extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.only(top: 10),
               ),
-              Wrap(
+              InkWell(
+                borderRadius: BorderRadius.circular(10),
+                onTap: () {
+                  _appStore(context);
+                },
+                //splashColor: Constants.greenWhatsApp,
+                hoverColor: Colors.grey.shade300,
+                child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    border: Border.all(color: Colors.black87),
+                  ),
+                  child: Padding(
+                    padding:
+                        EdgeInsets.symmetric(horizontal: 190, vertical: 12),
+                    child: Expanded(
+                      child: Container(
+                        height: 90,
+                        width: 180,
+                        child: Image(
+                          image: AssetImage("assets/images/app_store2.png"),
+                          fit: BoxFit.scaleDown,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top: 10),
+              ),
+              InkWell(
+                borderRadius: BorderRadius.circular(10),
+                onTap: () {
+                  _googlePlay(context);
+                },
+                //splashColor: Constants.greenWhatsApp,
+                hoverColor: Colors.grey.shade300,
+                child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    border: Border.all(color: Colors.black87),
+                  ),
+                  child: Padding(
+                    padding:
+                        EdgeInsets.symmetric(horizontal: 190, vertical: 12),
+                    child: Expanded(
+                      child: Container(
+                        height: 90,
+                        width: 180,
+                        child: Image(
+                          image: AssetImage("assets/images/google_play.png"),
+                          fit: BoxFit.scaleDown,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+/*              Wrap(
                 children: [
                   Padding(
                     padding: const EdgeInsets.only(left: 3, bottom: 4),
@@ -210,7 +269,7 @@ class HomeLinkExp2Sreen extends StatelessWidget {
                     ),
                   ),
                 ],
-              ),
+              ),*/
             ],
           ),
         ),
