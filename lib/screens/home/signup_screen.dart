@@ -35,10 +35,10 @@ class SignupScreen extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    "Link Região - Solicite o Seu.",
+                    "Link Região - Solicite o seu!",
                     style: TextStyle(
                       color: Colors.black54,
-                      fontSize: 14,
+                      fontSize: 16,
                       fontWeight: FontWeight.w500,
                     ),
                   ),

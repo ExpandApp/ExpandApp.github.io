@@ -26,7 +26,7 @@ class HomeLinkExp2Sreen extends StatelessWidget {
                 "Bem vindo ",
                 style: TextStyle(
                   color: Colors.black54,
-                  fontSize: 14,
+                  fontSize: 16,
                   fontWeight: FontWeight.w500,
                 ),
               ),
@@ -46,19 +46,20 @@ class HomeLinkExp2Sreen extends StatelessWidget {
                     border: Border.all(color: Colors.black87),
                   ),
                   child: Padding(
-                    padding:
-                        EdgeInsets.symmetric(horizontal: 190, vertical: 12),
-                    child: Container(
-                      height: 40,
-                      //width: 180,
-                      child: Center(
-                        child: Text(
-                          "WhatsApp",
-                          style: TextStyle(
-                              fontSize: 13, color: Colors.grey.shade700),
-                          overflow: TextOverflow.ellipsis,
+                    padding: EdgeInsets.symmetric(horizontal: 22, vertical: 20),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: <Widget>[
+                        //Icon(Icons.search),
+                        Center(
+                          child: Text(
+                            "WhatsApp",
+                            style: TextStyle(
+                                fontSize: 13, color: Colors.grey.shade700),
+                            overflow: TextOverflow.ellipsis,
+                          ),
                         ),
-                      ),
+                      ],
                     ),
                   ),
                 ),
@@ -79,19 +80,20 @@ class HomeLinkExp2Sreen extends StatelessWidget {
                     border: Border.all(color: Colors.black87),
                   ),
                   child: Padding(
-                    padding:
-                        EdgeInsets.symmetric(horizontal: 190, vertical: 12),
-                    child: Container(
-                      height: 40,
-                      //width: 180,
-                      child: Center(
-                        child: Text(
-                          "Telefone - Ligar",
-                          style: TextStyle(
-                              fontSize: 13, color: Colors.grey.shade700),
-                          overflow: TextOverflow.ellipsis,
+                    padding: EdgeInsets.symmetric(horizontal: 22, vertical: 20),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: <Widget>[
+                        //Icon(Icons.search),
+                        Center(
+                          child: Text(
+                            "Telefone",
+                            style: TextStyle(
+                                fontSize: 13, color: Colors.grey.shade700),
+                            overflow: TextOverflow.ellipsis,
+                          ),
                         ),
-                      ),
+                      ],
                     ),
                   ),
                 ),
@@ -113,36 +115,37 @@ class HomeLinkExp2Sreen extends StatelessWidget {
                     border: Border.all(color: Colors.black87),
                   ),
                   child: Padding(
-                    padding:
-                        EdgeInsets.symmetric(horizontal: 190, vertical: 12),
-                    child: Container(
-                      height: 40,
-                      //width: 180,
-                      child: Center(
-                        child: Text(
-                          "Link Região -> Solicite o seu!",
-                          style: TextStyle(
-                              fontSize: 13, color: Colors.grey.shade700),
-                          overflow: TextOverflow.ellipsis,
+                    padding: EdgeInsets.symmetric(horizontal: 22, vertical: 20),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: <Widget>[
+                        //Icon(Icons.search),
+                        Center(
+                          child: Text(
+                            "Link Região -> Solicite o seu!",
+                            style: TextStyle(
+                                fontSize: 13, color: Colors.grey.shade700),
+                            overflow: TextOverflow.ellipsis,
+                          ),
                         ),
-                      ),
+                      ],
                     ),
                   ),
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.only(top: 25),
+              SizedBox(
+                height: 35,
               ),
               Text(
                 "Baixe App gratuitamente 👇 ",
                 style: TextStyle(
                   color: Colors.black54,
-                  fontSize: 14,
+                  fontSize: 16,
                   fontWeight: FontWeight.w500,
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.only(top: 10),
+              SizedBox(
+                height: 25,
               ),
               InkWell(
                 borderRadius: BorderRadius.circular(10),
@@ -157,15 +160,22 @@ class HomeLinkExp2Sreen extends StatelessWidget {
                     border: Border.all(color: Colors.black87),
                   ),
                   child: Padding(
-                    padding:
-                        EdgeInsets.symmetric(horizontal: 190, vertical: 12),
-                    child: Container(
-                      height: 40,
-                      width: 180,
-                      child: Image(
-                        image: AssetImage("assets/images/apple.JPG"),
-                        fit: BoxFit.scaleDown,
-                      ),
+                    padding: EdgeInsets.symmetric(horizontal: 22, vertical: 20),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: <Widget>[
+                        //Icon(Icons.search),
+                        Center(
+                          child: Container(
+                            height: 40,
+                            width: 80,
+                            child: Image(
+                              image: AssetImage("assets/images/apple.JPG"),
+                              fit: BoxFit.scaleDown,
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                 ),
@@ -186,19 +196,27 @@ class HomeLinkExp2Sreen extends StatelessWidget {
                     border: Border.all(color: Colors.black87),
                   ),
                   child: Padding(
-                    padding:
-                        EdgeInsets.symmetric(horizontal: 190, vertical: 12),
-                    child: Container(
-                      height: 40,
-                      width: 180,
-                      child: Image(
-                        image: AssetImage("assets/images/google.JPG"),
-                        fit: BoxFit.scaleDown,
-                      ),
+                    padding: EdgeInsets.symmetric(horizontal: 22, vertical: 20),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: <Widget>[
+                        //Icon(Icons.search),
+                        Center(
+                          child: Container(
+                            height: 40,
+                            width: 80,
+                            child: Image(
+                              image: AssetImage("assets/images/google.JPG"),
+                              fit: BoxFit.scaleDown,
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                 ),
               ),
+
 /*              Wrap(
                 children: [
                   Padding(
