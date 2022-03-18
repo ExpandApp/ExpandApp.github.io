@@ -76,6 +76,8 @@ flutter:
     - assets/images/app_store.png
     - assets/images/app_store2.png
     - assets/images/google_play.png
+    - assets/images/apple.JPG
+    - assets/images/google.JPG
   #  - assets/images/social_media/
   #  - assets/images/Illustrations/
   # - assets/pdf/

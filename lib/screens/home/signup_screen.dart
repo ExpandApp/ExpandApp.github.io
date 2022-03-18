@@ -34,6 +34,14 @@ class SignupScreen extends StatelessWidget {
                       fit: BoxFit.scaleDown,
                     ),
                   ),
+                  Text(
+                    "Link Região - Solicite o Seu.",
+                    style: TextStyle(
+                      color: Colors.black54,
+                      fontSize: 14,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
                   SizedBox(
                     height: 25,
                   ),
@@ -50,7 +58,7 @@ class SignupScreen extends StatelessWidget {
                       return Padding(
                         padding: const EdgeInsets.only(top: 8),
                         child: SucessBox(
-                          message: 'Sucesso!',
+                          message: 'Sucesso! Obrigado entraremos em contato.',
                         ),
                       );
                     else
