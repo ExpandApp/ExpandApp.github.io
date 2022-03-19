@@ -78,6 +78,8 @@ flutter:
     - assets/images/google_play.png
     - assets/images/apple.JPG
     - assets/images/google.JPG
+    - assets/images/instagram.png
+    - assets/images/youtube.png
   #  - assets/images/social_media/
   #  - assets/images/Illustrations/
   # - assets/pdf/

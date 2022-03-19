@@ -173,6 +173,89 @@ class HomeLinkExp2Sreen extends StatelessWidget {
                 height: 35,
               ),
               Text(
+                "Redes Sociais ",
+                style: TextStyle(
+                  color: Colors.black54,
+                  fontSize: 16,
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
+              SizedBox(
+                height: 25,
+              ),
+              InkWell(
+                borderRadius: BorderRadius.circular(10),
+                onTap: () {
+                  _instagram(context);
+                },
+                //splashColor: Constants.greenWhatsApp,
+                hoverColor: Colors.grey.shade300,
+                child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    border: Border.all(color: Colors.black87),
+                  ),
+                  child: Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 22, vertical: 20),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: <Widget>[
+                        //Icon(Icons.search),
+                        Center(
+                          child: Container(
+                            height: 40,
+                            width: 80,
+                            child: Image(
+                              image: AssetImage("assets/images/instagram.png"),
+                              fit: BoxFit.scaleDown,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top: 10),
+              ),
+              InkWell(
+                borderRadius: BorderRadius.circular(10),
+                onTap: () {
+                  _youTube(context);
+                },
+                //splashColor: Constants.greenWhatsApp,
+                hoverColor: Colors.grey.shade300,
+                child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    border: Border.all(color: Colors.black87),
+                  ),
+                  child: Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 22, vertical: 20),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: <Widget>[
+                        //Icon(Icons.search),
+                        Center(
+                          child: Container(
+                            height: 40,
+                            width: 80,
+                            child: Image(
+                              image: AssetImage("assets/images/youtube.png"),
+                              fit: BoxFit.scaleDown,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 35,
+              ),
+              Text(
                 "Baixe App gratuitamente 👇 ",
                 style: TextStyle(
                   color: Colors.black54,
@@ -408,6 +491,45 @@ class HomeLinkExp2Sreen extends StatelessWidget {
     } else {
       ScaffoldMessenger.of(context).showSnackBar(SnackBar(
         content: const Text('Falha Google Play'),
+        duration: const Duration(seconds: 2),
+        action: SnackBarAction(
+          label: 'OK',
+          onPressed: () {
+            ScaffoldMessenger.of(context).removeCurrentSnackBar();
+          },
+        ),
+      ));
+    }
+  }
+
+  Future<Function?> _instagram(context) async {
+    var _url = "https://www.instagram.com/expand_app/";
+
+    if (await canLaunch(_url)) {
+      launch(_url);
+    } else {
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+        content: const Text('Falha Instagram'),
+        duration: const Duration(seconds: 2),
+        action: SnackBarAction(
+          label: 'OK',
+          onPressed: () {
+            ScaffoldMessenger.of(context).removeCurrentSnackBar();
+          },
+        ),
+      ));
+    }
+  }
+
+  Future<Function?> _youTube(context) async {
+    var _url =
+        "https://www.youtube.com/channel/UCq8_KtzeCxd8i2tBGKLdhrA/featured";
+
+    if (await canLaunch(_url)) {
+      launch(_url);
+    } else {
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+        content: const Text('Falha YouTube'),
         duration: const Duration(seconds: 2),
         action: SnackBarAction(
           label: 'OK',
